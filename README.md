@@ -1,6 +1,6 @@
-# Aqua Wallet First-Time Setup Guide
+# COIN.CZ Wallet First-Time Setup Guide
 
-This guide provides the minimal necessary steps to compile and run the **Aqua Wallet** application on Android.
+This guide provides the minimal necessary steps to compile and run the **COIN.CZ Wallet** application on Android.
 
 ---
 
@@ -10,6 +10,7 @@ This guide provides the minimal necessary steps to compile and run the **Aqua Wa
 - [Dart](https://dart.dev/get-dart) available in your PATH
 - Android SDK & emulator or a physical device connected
 - `make` installed (for running dependency commands)
+- Also change Flutter path in the `MakeFile` with the local installed required flutter version path.
 
 ---
 
@@ -24,13 +25,23 @@ cp .env.example .env
 
 ---
 
+
 ## 2. Fetch Native Dependencies
+
+The project relies on native Rust libraries (`boltz_rust`) that must be compiled locally.  
+To install Rust and Cargo, run the following command:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+---
 
 The project relies on native libraries that are not included in the repository.  
 Fetch them by running the following commands from the project root:
 
+
 ```bash
-make get-gdk && make get-boltz-rust && generate-bindings
+make get-gdk && make get-boltz-rust && make generate-bindings
 ```
 
 ---
@@ -69,4 +80,4 @@ flutter clean
 
 ---
 
-✨ You’re now ready to use **Aqua Wallet** on Android!
+✨ You’re now ready to use **COIN.CZ Wallet** on Android!
