@@ -28,10 +28,8 @@ lib/gen/
 *.iws
 .idea/
 
-# The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
-#.vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -61,7 +59,6 @@ android/app/.cxx
 
 macos/
 linux/
-.vscode/launch.json
 
 # FVM Version Cache
 .fvm/
@@ -72,3 +69,9 @@ coverage/lcov.info
 
 # Environment files
 *.env
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
+config.bat
+node_modules
