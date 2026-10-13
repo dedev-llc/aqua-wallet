@@ -70,4 +70,4 @@ coverage/lcov.info
 # Environment files
 *.env
 node_modules
-.env
+config.bat
