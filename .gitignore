@@ -34,7 +34,6 @@ lib/gen/
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
-temp_auto_push.bat
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -71,6 +70,5 @@ coverage/lcov.info
 # Environment files
 *.env
 node_modules
-config.bat
 .gitignore
-branch_structure.json
+config.bat
